@@ -1,0 +1,99 @@
+
+.big-hider4 {
+    position: absolute;
+    width: 107px;
+    height: 68px;
+    background-image: url('../images/jeden.png');
+
+    background-position: -640px -471px;
+    z-index: 10;
+    top: 313px;
+    right: 474px;
+
+}
+
+.target4{
+
+        position: absolute;
+        top: 315px;
+        right: 496px;
+
+    .score3 {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid black;
+        position: relative;
+
+
+        .hostage{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: green;
+            position: absolute;
+            border: 1px solid black;
+            top: 20px;
+            left:0;
+            z-index: 5;
+            animation: move4 0.5s  infinite alternate;
+        }
+
+        .score4 {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .score5 {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: black;
+                border: 1px solid white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                .score7{
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background-color: black;
+                    border: 1px solid white;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    .score10 {
+                        width: 3px;
+                        height: 3px;
+                        border-radius: 50%;
+                        background-color: red;
+
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes move4 {
+    0%   {left:-15px;}
+
+    // 50%  {top:235px;}
+
+    100% {left:25px}
+}

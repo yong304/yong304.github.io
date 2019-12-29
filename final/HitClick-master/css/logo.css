@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.content {
+    height: 88vh;
+    width: 1000px;
+    background-image: url('../images/logo.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 6vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+h1 {
+    color: white;
+    font-size: 60px;
+
+    text-shadow: 3px 2px 2px white;
+}
+.logo {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+
+}
+.logo a {
+    color: white;
+}
+#author {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 40px;
+
+}

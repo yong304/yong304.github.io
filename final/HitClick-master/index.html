@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="Pl-pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HIT - CLICK</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="Shortcut icon" href="images/favicon.png" />
+</head>
+<body>
+    <div class="content">
+        <div class="start">
+            <div class="logo">
+                <h1>HIT - CLICK</h1>
+            </div>
+            <div class="logo-start">
+                <a id="start" href="#">START</a>
+            </div>
+            <div class="logo-info">
+                <div class="left">
+                    <ul>
+                        <li id="instruction">Instruction
+                            <div class="instruction-hide">
+                                <h2><u>Instruction:</u></h2>
+                                <p>Game lasts 30sec.</p>
+                                <ul>
+                                    <li>R - reload</li>
+                                    <li>S - slow motion</li>
+                                </ul>
+                                <p>Slow motion - stops time for 4s.</p>
+                                <p> Green circle - hostage</p>
+                                <p> You have 3 seconds to shot target behind hostage, if you don't do this, hostage is dead </p>
+                                <p> Hostage dead = -10pts </p>
+                                <img src="./images/target.png" alt="">
+                                <p>The closer center of target you shot - you get more points.</p>
+                            </div>
+
+
+                        </li>
+                        <li id="highscore">Highscore
+                            <ol id="resultHigh"><h2>Highscore:</h2>
+
+                            </ol>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <a href="http://github.com/kolin4/">Kolacz Krzysztof</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="game">
+            <span id="timerStart">3</span>
+
+            <div class="info">
+                <div class="bullet">
+                    <span>BULLET:</span>
+                    <img src="images/bullet.png" alt="bullet">
+                    <img src="images/bullet.png" alt="bullet">
+                    <img src="images/bullet.png" alt="bullet">
+                    <img src="images/bullet.png" alt="bullet">
+                    <img src="images/bullet.png" alt="bullet">
+                </div>
+                <div class="time">TIME: <span></span></div>
+                <div class="score">SCORE: <span></span></div>
+            </div>
+            <div class="boxes">
+
+                    <!-- target hider -->
+                    <div class="big-hider">
+                    </div>
+                    <!-- target -->
+                    <div class="target cel" data-show='false' data-nr = '1'>
+                        <div class="score3" data-score = '3'>
+                                <!-- target hostage -->
+                        <div class="hostage" data-score = '-10' data-id='1'>
+                            <span></span>
+                        </div>
+                            <div class="score4"data-score = '4'>
+                                <div class="score5"data-score = '5'>
+                                    <div class="score7"data-score = '7'>
+                                        <div class="score10"data-score = '10'>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <!-- 2 target -->
+                    <div class="big-hider2">
+                    </div>
+                    <!-- target -->
+                    <div class="target2 cel" data-show='false'  data-nr = '2'>
+                        <div class="score3" data-score = '3'>
+                                <!-- target hostage -->
+                        <div class="hostage" data-score = '-10' data-id='2'>
+                            <span></span>
+                        </div>
+                            <div class="score4"data-score = '4'>
+                                <div class="score5"data-score = '5'>
+                                    <div class="score7"data-score = '7'>
+                                        <div class="score10"data-score = '10'>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 target -->
+                    <div class="big-hider3">
+                    </div>
+                    <!-- target -->
+                    <div class="target3 cel" data-id = 'small' data-show='false'  data-nr = '3'>
+                        <div class="score3" data-score = '3'>
+                                <!-- target hostage -->
+                        <div class="hostage" data-score = '-10' data-id='3'>
+                            <span></span>
+                        </div>
+                            <div class="score4"data-score = '4'>
+                                <div class="score5"data-score = '5'>
+                                    <div class="score7"data-score = '7'>
+                                        <div class="score10"data-score = '10'>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 target -->
+                    <div class="big-hider4">
+                    </div>
+                    <!-- target -->
+                    <div class="target4 cel" data-id = 'small-left' data-show='false'  data-nr = '4'>
+                        <div class="score3" data-score = '3'>
+                                <!-- target hostage -->
+                        <div class="hostage" data-score = '-10' data-id='4'>
+                            <span></span>
+                        </div>
+                            <div class="score4"data-score = '4'>
+                                <div class="score5"data-score = '5'>
+                                    <div class="score7"data-score = '7'>
+                                        <div class="score10"data-score = '10'>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 target -->
+                    <div class="big-hider5">
+                    </div>
+                    <!-- target -->
+                    <div class="target5 cel" data-id = 'small-right' data-show='false'  data-nr = '5'>
+                        <div class="score3" data-score = '3'>
+                                <!-- target hostage -->
+                        <div class="hostage" data-score = '-10' data-id='5'>
+                            <span></span>
+                        </div>
+                            <div class="score4"data-score = '4'>
+                                <div class="score5"data-score = '5'>
+                                    <div class="score7"data-score = '7'>
+                                        <div class="score10"data-score = '10'>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/app.js">
+
+  </script>
+</html>

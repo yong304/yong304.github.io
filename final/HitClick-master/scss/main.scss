@@ -1,0 +1,232 @@
+@import 'partials/target1.scss';
+@import 'partials/target2.scss';
+@import 'partials/target3.scss';
+@import 'partials/target4.scss';
+@import 'partials/target5.scss';
+
+
+* {
+    box-sizing: border-box;
+    cursor: crosshair;
+}
+
+.content {
+    height: 555px;
+    width: 1011px;
+    background-image: url('../images/logo.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 6vh auto;
+    border: 1px solid black;
+    border-style: double;
+    .start {
+        width: 100%;
+        height: 100%;
+        .logo {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            h1 {
+                font-size: 48px;
+                color: white;
+                text-shadow: 3px 2px 2px white;
+                margin-bottom: 5px;
+            }
+
+        }
+        .logo-start{
+            display: flex;
+            justify-content: center;
+            height: 10vh;
+
+            a {
+                color: white;
+                font-size: 32px;
+                transition: 0.5s;
+            &:hover {
+                color:red;
+            }
+            }
+        }
+        .logo-info {
+            height: 34vh;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 20px;
+            .left {
+                width: 50%;
+                height: 50px;
+                float: left;
+                display: flex;
+                align-items: center;
+                ul li{
+                    display: inline-block;
+                    color: white;
+                    font-size: 24px;
+                    padding-right:100px;
+                    position: relative;
+                    transition: 0.5s;
+
+                    &:hover{
+                        color: red;
+                    }
+                    .instruction-hide {  // zmienic na display none;
+                        visibility: hidden;
+                        opacity: 0;
+                        position: absolute;
+                        bottom: 50px;
+                        width: 300px;
+                        font-size: 16px;
+                        transition: 0.5s;
+                        color: white !important;
+                    }
+
+                }
+                #highscore {
+                    position: relative;
+                    transition: 0.5s;
+                    &:hover{
+                        color: red;
+                    }
+
+                    #resultHigh {
+
+                        visibility: hidden;
+                        opacity: 0;
+                        position: absolute;
+                        bottom: 380px;
+                        right: 130px;
+                        width: 300px;
+                        font-size: 16px;
+                        transition: 0.5s;
+                        background-color: black;
+                        transition: 0.5s;
+                        color: white !important;
+
+                        li {
+                            // width: 200px;
+                            margin-left: 0;
+                            color: white !important;
+                            display: flex;
+                            justify-content: space-between;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+            .right{
+                width: 50%;
+                height: 50px;
+                float: right;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                a {
+                    color: white;
+                    font-size: 24px;
+                    margin-right: 40px;
+                    transition: 0.5s;
+                &:hover {
+                    color: red;
+                }
+
+
+                }
+
+            }
+        }
+
+
+
+    }
+    .game {
+        background-image: url('../images/makieta.jpg');
+
+        display: none;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        #timerStart{
+            font-size:90px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 3px 2px 2px black;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            z-index: 40;
+        }
+
+
+
+        .info{
+            height: 60px;
+            background-color: white;
+            opacity: 0.9;
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 30px;
+            user-select: none;
+
+            .bullet  {
+                width: 33.3333%;
+                padding-left: 20px;
+                display: flex;
+                align-items: center;
+
+                img {
+                    display: inline-block;
+                    width: 15px;
+                    height: 55px;
+                }
+            }
+            .time {
+                width: 33.3333%;
+            }
+            .score{
+                width: 33.3333%;
+                padding-right: 150px;
+            }
+        }
+    }
+}
+
+.timeEnd{
+    position: absolute;
+    top: 40%;
+    left: 27%;
+    font-size:90px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 2px 2px black;
+    z-index: 40;
+
+}
+.lastScore {
+    position: absolute;
+    top: 54%;
+    left: 42%;
+    font-size:40px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 2px 2px black;
+    z-index: 40;
+}
+.btnStart{
+    position: absolute;
+    top: 81%;
+    left: 67%;
+    font-size:40px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 2px 2px black;
+    z-index: 40;
+}
